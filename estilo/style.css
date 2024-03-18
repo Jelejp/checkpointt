@@ -1,0 +1,289 @@
+:root {
+    --color-1: #3F51B5;
+    --negro: black;
+    --blanco: white;
+    --color-4: rgb(197, 195, 230);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: row;
+}
+
+header h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+header .logo {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+}
+
+nav {
+    background-color: var(--blanco);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid var(--color-1);
+}
+
+nav a {
+    background-color: var(--blanco);
+    text-decoration: none;
+    color: var(--negro);
+    border-bottom: 2px solid var(--color-1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px var(--color-1);
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    background-image: url(./fondo.webp);
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position:bottom right ;
+}
+h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.img,
+.img1 {
+    object-fit: cover;
+    
+}
+
+.img1 {
+    width: 99.8%;
+}
+
+.card {
+    background-color: var(--color-4);
+    width: 63vw;
+    height: 29vh;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .6);
+}
+
+.card1 {
+    background-color: var(--color-4);
+    width: 63.4vw;
+    height: 22vh;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, .6);
+}
+
+.card h3,
+.card1 h3 {
+    padding-top: 5px;
+}
+
+.card,
+.card1 {
+    border: 2px solid var(--negro);
+}
+
+.contenedor2 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lista,
+.tabla {
+    width: 60%;
+    height: 25vh;
+    margin-top: 10px;
+    background-color: var(--color-4);
+    border: 2px solid var(--negro);
+}
+
+.lista ul {
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.table {
+    padding-top: 10px;
+    text-align: center;
+}
+
+table {
+    margin-top: 10px;
+    margin-left: 13px;
+    background-color: var(--blanco);
+    text-align: center;
+}
+
+table,
+tr,
+th,
+td {
+
+    border: 1px solid var(--negro);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+fieldset {
+    padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 70px;
+        padding-top: 25px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        width: 20%;
+    }
+    .contenedor1{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    
+    } 
+    .card {
+        width: 30vw;
+        height: 28vh;
+        margin-right: 40px;
+    }
+
+    .card1 {
+        width: 34vw;
+        height: 25vh;
+    }
+    .contenedor2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .lista , .tabla{
+        width: 35%;
+        height: 20vh;
+        margin-right: 20px;
+    } 
+    table{
+        margin-top: 10px;
+        margin-left: 35px;
+    } 
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+}
+@media screen and (min-width: 1024px) {
+    header .logo {
+        width: 13%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    nav a{
+        margin-right: 30px;
+    }
+    h2{
+        padding: 8px;
+    }
+    .contenedor1{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        width: 20vw;
+        height: 24vh;
+        margin-top: 2px;
+    }
+    .card1{
+        width: 20vw;
+        height: 24vh;
+        margin-right: 40px;
+        margin-top: 2px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    header .logo {
+        width: 10%;
+    }
+    header h1{
+        font-size: 90px;
+    }
+    main{
+        background-size: 100%;
+    
+    }
+    h2{
+        font-size: 35px;
+    }
+    .contenedor1{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        width: 20vw;
+        height: 30vh;
+        margin-top: 2px;
+    }
+    .card1{
+        width: 20vw;
+        height: 30vh;
+        margin-right: 40px;
+        margin-top: 2px;
+    }
+    .lista , .tabla{
+        width: 17%;
+    }
+    table{
+        margin-left: 20px;
+    }
+    .footer{
+        margin-top: 10px;
+    }
+}
+
+
